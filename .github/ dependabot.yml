@@ -1,0 +1,17 @@
+version: 2
+updates:
+  # 监控 GitHub Actions 的版本更新
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Asia/Shanghai"
+
+  # 监控 Python (pip) 依赖包的版本更新
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
